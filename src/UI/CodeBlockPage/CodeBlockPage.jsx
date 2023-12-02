@@ -36,7 +36,6 @@ function CodeBlockPage() {
   useEffect(() => {
     if (status === "success") {
       setCodeBlock(codeBlockData.codeblock);
-      console.log(codeBlockData.codeblock);
     }
   }, [status, codeBlockData]);
 
@@ -60,7 +59,7 @@ function CodeBlockPage() {
   }, [isAdmin]);
 
   return isLoading ? (
-    <div>Loading...</div>
+    <div></div>
   ) : (
     <div className="code-block-container">
       <h1 className="code-block-header">{codeBlock.title} </h1>
