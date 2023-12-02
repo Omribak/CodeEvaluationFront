@@ -1,0 +1,19 @@
+.indicator-container {
+  background-color: rgba(45, 52, 110, 0.3);
+  width: 200px;
+  height: 280px;
+  color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  box-shadow: 0 0 4px 2px rgba(121, 121, 121, 0.5);
+}
+
+.user-indicator {
+  display: flex;
+  gap: 20px;
+}
+
+.connected-icon {
+  margin-top: 0.8rem;
+  color: rgb(78, 78, 255);
+}
