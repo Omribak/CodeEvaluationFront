@@ -10,7 +10,9 @@ import { FaArrowLeft } from "react-icons/fa";
 import io from "socket.io-client";
 import UsersIndicator from "../../Components/UsersIndicator/UsersIndicator";
 
-const socket = io.connect("https://code-evaluation-mentor-api.onrender.com/");
+const socket = io.connect("https://code-evaluation-mentor-api.onrender.com", {
+  transports: ["websocket"],
+});
 
 function CodeBlockPage() {
   const { blockId } = useParams();
